@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/autozen_user_db
+    username: postgres
+    password: postgres
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+
+server:
+  port: 9010
